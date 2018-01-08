@@ -1,0 +1,19 @@
+# dbus vext
+#
+
+# Vext will allow access to these modules
+modules:
+    dbus
+    _dbus_bindings
+    _dbus_glib_bindings
+
+test_import:
+    # To check if the install worked
+    dbus _dbus_bindings _dbus_glib_bindings
+
+install_hint:
+   dbus not accessible outside the vext
+
+# pygtk.pth does most of the initialisation of pygtk
+# pths:
+#    pygtk.pth
